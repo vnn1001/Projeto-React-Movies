@@ -1,0 +1,49 @@
+.card-v{
+    background-color: var(--cor-components);
+    color: #ffffff;
+    max-width: 200px;
+    border-radius: 10px;
+    font-family: 'Roboto' sans-serif;
+    margin: 15px;
+}
+
+.Imagem{  
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    padding: 150px 100px;
+}
+
+.detalhes{
+    text-align: left;
+    padding: 15px;
+
+}
+
+.detalhes h1{
+    font-size: 20px;
+}
+
+.detalhes h2{
+    font-size: .8em;
+    font-weight: lighter;
+}
+.detalhes h3{
+    font-size: .7em;
+    font-weight: lighter;
+
+}
+.btn-detalhe{
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    padding: 5px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.detalhes h2,h1,h3{
+    margin: 5px; 
+}

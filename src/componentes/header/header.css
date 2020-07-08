@@ -1,0 +1,37 @@
+.Header{
+    background-color:var(--cor-components);
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  .Logo {
+    background-color: #000000;
+    border-radius: 10px;
+    font-family: Roboto sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FE0505;
+    padding: 10px 30px;
+  }
+  .Header form input{
+    border-radius: 10px;
+    border: 0px;
+    width: 300px;
+    height: 2 rem;
+    margin: 0 10px;
+    font-family: Roboto sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+
+.Header form button{
+  background-color: #FF0202;
+  border: none;
+  border-radius: 10px;
+  height: 2rem;
+  width: 100px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+}
