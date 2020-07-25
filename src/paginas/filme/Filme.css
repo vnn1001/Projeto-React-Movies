@@ -1,0 +1,41 @@
+.hero{
+    display: flex;
+    position: relative;
+    z-index: 5;
+}
+
+.btn-voltar{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid #c4c4c4;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin: 30px;
+}
+
+
+.hero img{
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 50px;
+}
+
+.filme-info{
+    color: #c4c4c4;
+}
+
+.filme-info h1{
+    color: white;
+}
+
+.filme-info{
+    width: 70%;
+}
+
+.filme-info span{
+    color: var(--cor-destaque);
+    margin-right: 5px;
+}

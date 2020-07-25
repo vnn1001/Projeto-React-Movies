@@ -4,7 +4,8 @@ import {BrowserRouter, Switch, Route, NavLink} from  'react-router-dom'
 import Header from './componentes/header/index';
 import Lancamentos from "./paginas/lancamentos/Lancamentos.jsx";
 import Inicio from "./paginas/inicio/Inicio.jsx";
-import Busca from "./paginas/busca/busca.jsx"
+import Busca from "./paginas/busca/busca.jsx";
+import Filme from "./paginas/filme/Filme.jsx"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" component={Inicio}/>
         <Route path="/lancamentos" component={Lancamentos}/>
         <Route path="/inicio" component={Inicio}/>
+        <Route path="/filme" component={Filme}/>
         <Route path="/busca" component={Busca}/>
         </Switch>
       </BrowserRouter>

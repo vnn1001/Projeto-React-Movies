@@ -1,9 +1,18 @@
-import React,{useEffect, useState} from 'react'
+import React,{useEffect, useState, Fragment} from 'react'
 import CardV from "../../componentes/card/card.jsx";
-import axios from 'axios'
+import api from '../../servicos/api.jsx';
 
 export default function Lancamentos(){
     const [filmes,setFilmes] = useState([])
+
+    const api_options = {
+        
+        params:{       
+        api_key: "6fe8f69c49be4d9e06ec3d33cbbaefe2",
+        language:"pt_BR"
+
+        }
+    }
 
     useEffect(
         function(){
@@ -14,7 +23,7 @@ export default function Lancamentos(){
     async function load(){
 
         try{
-            const resposta = await axios.get("https://api.themoviedb.org/3/movie/upcoming?api_key=6fe8f69c49be4d9e06ec3d33cbbaefe2&language=pt-BRS&page=1")
+            const resposta = await api.get("movie/upcoming", api_options)
             setFilmes(resposta.data.results)
             console.log(resposta.data.results)
         }catch(erro){

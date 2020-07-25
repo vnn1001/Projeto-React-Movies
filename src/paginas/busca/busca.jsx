@@ -28,5 +28,4 @@ export default function Busca(props){
             {filmes.map((filme) =><CardV key={filme.id} filme={filme}/>)}
         </div>
     );
-
 }

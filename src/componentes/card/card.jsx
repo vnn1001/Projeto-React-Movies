@@ -1,5 +1,6 @@
 import React from 'react'
 import './card.css'
+import { NavLink } from 'react-router-dom'
 
 export default function CardV({filme}){
 const nota= filme.vote_average.toFixed(1)
@@ -20,9 +21,9 @@ const data_lancamento = data.toLocaleDateString()
                 <h1>{filme.title}</h1>
                 <h2>{data_lancamento}</h2>
             </div>
-            <a href="#" className="btn-detalhe">
+            <NavLink to="/filme" className="btn-detalhe">
                 <span className="material-icons">add_circle_outline</span>
-            </a>
+            </NavLink>
         </div>
     )
 } 
